@@ -1,0 +1,9 @@
+@mixin clear-fix {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+@mixin box-height($val) {
+  min-height: $val;
+}

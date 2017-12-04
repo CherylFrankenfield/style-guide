@@ -1,0 +1,39 @@
+@import "variables/variables";
+@import "mixins/mixins";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.container:after, .row:after {
+ @include clear-fix;
+}
+
+.row {
+  width: 100%;
+}
+
+@for $var from 1 through 4 {
+  $width: percentage(1 / $var);
+
+  .col-#{$var} {
+    width: $width - 1;
+  }
+}
+
+
+.col-4 {
+  float: left;
+  margin-right: 1%;
+}

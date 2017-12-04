@@ -1,0 +1,73 @@
+@import "mixins/mixins";
+//Primary Colors
+$mint-color: rgb(217, 245, 232);
+$teal-color: rgb(55, 203, 194);
+$gold-color: rgb(255, 187, 51);
+$tomato-color: rgb(255, 99, 71);
+
+$colors: (
+  'mint': $mint-color,
+  'teal': $teal-color,
+  'gold': $gold-color,
+  'tomato': $tomato-color
+);
+
+@each $background-color, $rgb in $colors {
+
+  .bg-lg-#{$background-color} {
+    background-color: $rgb;
+    @include box-height(10em);
+  }
+
+  .bg-sm-#{$background-color}{
+    background-color: $rgb;
+    @include box-height(4em);
+  }
+}
+
+
+
+//Lighter Tones colors
+$lighter-mint-color: lighten($mint-color, 10%);
+$lighter-gold-color: lighten($gold-color, 10%);
+$lighter-tomato-color: lighten($tomato-color, 10%);
+$lighter-teal-color: lighten($teal-color, 10%);
+
+$lighter-colors:(
+  'mint': $lighter-mint-color,
+  'gold': $lighter-gold-color,
+  'tomato': $lighter-tomato-color,
+  'teal': $lighter-teal-color
+);
+
+@each $background-color, $rgb in $lighter-colors {
+  .lighter-#{$background-color}{
+    width: 33.3333%;
+    margin-right: 33.3333%;
+    float: left;
+    @include box-height(10em);
+    background-color: $rgb;
+  }
+}
+
+//Darker Tones colors
+$darker-mint-color: darken($mint-color, 25%);
+$darker-gold-color: darken($gold-color, 25%);
+$darker-teal-color: darken($teal-color, 25%);
+$darker-tomato-color: darken($tomato-color, 25%);
+
+$darker-colors: (
+  'mint': $darker-mint-color,
+  'gold': $darker-gold-color,
+  'tomato': $darker-tomato-color,
+  'teal': $darker-teal-color
+);
+
+@each $background-color, $rgb in $darker-colors {
+  .darker-#{$background-color} {
+    width: 33.3333%;
+    float: left;
+    @include box-height(10em);
+    background-color: $rgb;
+  }
+}
