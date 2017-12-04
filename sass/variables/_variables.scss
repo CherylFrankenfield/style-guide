@@ -25,8 +25,6 @@ $colors: (
   }
 }
 
-
-
 //Lighter Tones colors
 $lighter-mint-color: lighten($mint-color, 10%);
 $lighter-gold-color: lighten($gold-color, 10%);
@@ -71,3 +69,17 @@ $darker-colors: (
     background-color: $rgb;
   }
 }
+
+$font-family: (
+  '1': 'Shrikhand',
+  '2': 'Permanent Marker',
+  '3': 'Monoton'
+);
+
+@each $num, $family in $font-family {
+  .f-family li:nth-child(#{$num}) {
+    font-family: $family;
+  }
+}
+
+@each 
