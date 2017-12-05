@@ -82,4 +82,8 @@ $font-family: (
   }
 }
 
-@each 
+@each $background-color, $rgb in $darker-colors {
+  .darker-font-#{$background-color} {
+    color: $rgb;
+  }
+}

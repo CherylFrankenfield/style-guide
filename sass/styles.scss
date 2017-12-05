@@ -32,6 +32,24 @@ ul {
   }
 }
 
+@keyframes fadeIn {
+  to{
+    opacity:1;
+  }
+}
+
+.carousel {
+  position: relative;
+}
+
+.img {
+  display: block;
+  margin: auto;
+}
+
+.hide {
+  display: none;
+}
 
 .col-4 {
   float: left;

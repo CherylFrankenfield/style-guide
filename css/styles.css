@@ -1,71 +1,197 @@
-/*
-Error: Invalid CSS after "@each": expected "$", was ""
-        on line 86 of sass/variables/_variables.scss
-        from line 1 of sass/styles.scss
+.bg-lg-mint {
+  background-color: #d9f5e8;
+  min-height: 10em;
+}
 
-81:     font-family: $family;
-82:   }
-83: }
-84: 
-85: @each
+.bg-sm-mint {
+  background-color: #d9f5e8;
+  min-height: 4em;
+}
 
-Backtrace:
-sass/variables/_variables.scss:86
-sass/styles.scss:1
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1278:in `expected'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1208:in `expected'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1203:in `tok!'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:305:in `each_directive'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:234:in `special_directive'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:209:in `directive'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:696:in `block_child'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:689:in `block_contents'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:137:in `stylesheet'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:41:in `parse'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:414:in `_to_tree'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:321:in `to_tree'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:88:in `block in with_import'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:88:in `with_import'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"@each\": expected \"$\", was \"\"\A         on line 86 of sass/variables/_variables.scss\A         from line 1 of sass/styles.scss\A \A 81:     font-family: $family;\A 82:   }\A 83: }\A 84: \A 85: @each"; }
+.bg-lg-teal {
+  background-color: #37cbc2;
+  min-height: 10em;
+}
+
+.bg-sm-teal {
+  background-color: #37cbc2;
+  min-height: 4em;
+}
+
+.bg-lg-gold {
+  background-color: #ffbb33;
+  min-height: 10em;
+}
+
+.bg-sm-gold {
+  background-color: #ffbb33;
+  min-height: 4em;
+}
+
+.bg-lg-tomato {
+  background-color: tomato;
+  min-height: 10em;
+}
+
+.bg-sm-tomato {
+  background-color: tomato;
+  min-height: 4em;
+}
+
+.lighter-mint {
+  width: 33.3333%;
+  margin-right: 33.3333%;
+  float: left;
+  min-height: 10em;
+  background-color: white;
+}
+
+.lighter-gold {
+  width: 33.3333%;
+  margin-right: 33.3333%;
+  float: left;
+  min-height: 10em;
+  background-color: #ffcc66;
+}
+
+.lighter-tomato {
+  width: 33.3333%;
+  margin-right: 33.3333%;
+  float: left;
+  min-height: 10em;
+  background-color: #ff8e7a;
+}
+
+.lighter-teal {
+  width: 33.3333%;
+  margin-right: 33.3333%;
+  float: left;
+  min-height: 10em;
+  background-color: #5fd6ce;
+}
+
+.darker-mint {
+  width: 33.3333%;
+  float: left;
+  min-height: 10em;
+  background-color: #74daab;
+}
+
+.darker-gold {
+  width: 33.3333%;
+  float: left;
+  min-height: 10em;
+  background-color: #b37700;
+}
+
+.darker-tomato {
+  width: 33.3333%;
+  float: left;
+  min-height: 10em;
+  background-color: #c71e00;
+}
+
+.darker-teal {
+  width: 33.3333%;
+  float: left;
+  min-height: 10em;
+  background-color: #1b6863;
+}
+
+.f-family li:nth-child(1) {
+  font-family: "Shrikhand";
+}
+
+.f-family li:nth-child(2) {
+  font-family: "Permanent Marker";
+}
+
+.f-family li:nth-child(3) {
+  font-family: "Monoton";
+}
+
+.darker-font-mint {
+  color: #74daab;
+}
+
+.darker-font-gold {
+  color: #b37700;
+}
+
+.darker-font-tomato {
+  color: #c71e00;
+}
+
+.darker-font-teal {
+  color: #1b6863;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.container:after, .row:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.row {
+  width: 100%;
+}
+
+.col-1 {
+  width: 99%;
+}
+
+.col-2 {
+  width: 49%;
+}
+
+.col-3 {
+  width: 32.3333333333%;
+}
+
+.col-4 {
+  width: 24%;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.carousel {
+  position: relative;
+}
+
+.img {
+  display: block;
+  margin: auto;
+}
+
+.hide {
+  display: none;
+}
+
+.col-4 {
+  float: left;
+  margin-right: 1%;
+}
+
+.open-sans li {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=styles.css.map */
